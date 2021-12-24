@@ -18,7 +18,10 @@
     "loadtest": "^5.1.2",
     "mongodb": "^4.2.2",
     "mongoose": "^6.1.3",
-    "pretty": "^2.0.0"
+    "pretty": "^2.0.0",
+    "rethinkdb": "^2.4.2",
+    "rethinkdb-dump-restore-cli": "^1.5.0",
+    "thinky": "^2.3.9"
   },
   "devDependencies": {
     "eslint": "^8.5.0",
