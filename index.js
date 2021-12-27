@@ -1,19 +1,12 @@
 const runApp = require("./lib/app");
 const { exec } = require("child_process");
 const r = require("rethinkdb");
-// const pLimit = require("p-limit");
+const pLimit = require("p-limit");
+const limit = pLimit(1);
 
-// const limit = pLimit(5);
-
-// const functionList = [
-//     limit(() => runApp()),
-//     limit(() => runApp()),
-//     limit(() => runApp()),
-//     limit(() => runApp()),
-//     limit(() => runApp())
-// ];
-
-// Promise.all(functionList).then((res) => console.log(res));
+//functionList = [runApp(), runAp]
+//Promise.all(functionList).then((res) => console.log(res));
+//console.log(typeof runApp());
 runApp();
 process.on("SIGINT", () => {
   console.log("caughtInterruptSignal");
