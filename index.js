@@ -1,20 +1,6 @@
-const runApp = require("./lib/app");
+const runApp = require("./lib/runApp");
 const { exec } = require("child_process");
-const r = require("rethinkdb");
-const clearTable = require("./lib/util/clearTable");
-// const pLimit = require("p-limit");
 
-// const limit = pLimit(5);
-
-// const functionList = [
-//     limit(() => runApp()),
-//     limit(() => runApp()),
-//     limit(() => runApp()),
-//     limit(() => runApp()),
-//     limit(() => runApp())
-// ];
-
-// Promise.all(functionList).then((res) => console.log(res));
 runApp();
 
 process.on("SIGINT", () => {
