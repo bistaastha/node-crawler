@@ -1,0 +1,1 @@
+rethinkdb export -e scraperdb.questions --format csv --fields path,referenceCount,upvotes,answers
